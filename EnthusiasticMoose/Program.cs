@@ -90,12 +90,73 @@ static void AcceptQuestions(){
     MooseSays("Ok now you ask a question?");
     string response =Console.ReadLine();
     while(response.Length>0){
-        System.Console.WriteLine("in while");
+        Random random=new Random();
+        int number=random.Next(1,20);
+        switch (number){
+            case 1:
+            System.Console.WriteLine("As I see it, yes.");
+            break;
+            case 2:
+            System.Console.WriteLine("Ask again later.");
+            break;
+            case 3:
+            System.Console.WriteLine("Better not tell you now.");
+            break;
+            case 4:
+            System.Console.WriteLine("Cannot predict now.");
+            break;
+            case 5:
+            System.Console.WriteLine("Concentrate and ask again.");
+            break;
+            case 6:
+            System.Console.WriteLine("Don’t count on it.");
+            break;
+            case 7:
+            System.Console.WriteLine("It is certain.");
+            break;
+            case 8:
+            System.Console.WriteLine("It is decidedly so.");
+            break;
+            case 9:
+            System.Console.WriteLine("Most likely.");
+            break;
+            case 10:
+            System.Console.WriteLine("My reply is no.");
+            break;
+            case 11:
+            System.Console.WriteLine("My sources say no.");
+            break;
+            case 12:
+            System.Console.WriteLine("Outlook not so good.");
+            break;
+            case 13:
+            System.Console.WriteLine("Outlook good.");
+            break;
+            case 14:
+            System.Console.WriteLine("Reply hazy, try again.");
+            break;
+            case 15:
+            System.Console.WriteLine("Signs point to yes.");
+            break;
+            case 16:
+            System.Console.WriteLine("Very doubtful.");
+            break;
+            case 17:
+            System.Console.WriteLine("Without a doubt.");
+            break;
+            case 18:
+            System.Console.WriteLine("Yes.");
+            break;
+            case 19:
+            System.Console.WriteLine("Yes – definitely.");
+            break;
+            case 20:
+            System.Console.WriteLine("You may rely on it.");
+            break;
+        }
         MooseSays("Ask another?");
         response=Console.ReadLine();
     }
-    System.Console.WriteLine("outside while");
-
 }
     }
 }
