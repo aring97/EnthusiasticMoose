@@ -16,6 +16,7 @@ namespace EnthusiasticMoose
 
             // Ask a question
             AskQuestions();
+            AcceptQuestions();
         }
         static void AskQuestions()
         {
@@ -83,6 +84,18 @@ namespace EnthusiasticMoose
     {
         return false;
     }
+}
+
+static void AcceptQuestions(){
+    MooseSays("Ok now you ask a question?");
+    string response =Console.ReadLine();
+    while(response.Length>0){
+        System.Console.WriteLine("in while");
+        MooseSays("Ask another?");
+        response=Console.ReadLine();
+    }
+    System.Console.WriteLine("outside while");
+
 }
     }
 }
